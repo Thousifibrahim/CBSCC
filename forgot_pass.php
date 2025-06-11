@@ -20,12 +20,12 @@ function sendResetEmail($email, $token) {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com'; // Your SMTP server
         $mail->SMTPAuth = true;
-        $mail->Username = 'ahilxdesigns@@gmail.com'; // Your email
-        $mail->Password = 'itwx hwqp rnfk rcsc'; // Your email password
+        $mail->Username = 'example@gmail.com'; // Your email
+        $mail->Password = 'SMPT CODE'; // Your email password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
-        $mail->setFrom('ahilxdesigns@gmail.com', 'Career Bridge'); // Your email and name
+        $mail->setFrom('--@gmail.com', 'Career Bridge'); // Your email and name
         $mail->addAddress($email);
 
         $mail->isHTML(true);
