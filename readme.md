@@ -140,18 +140,19 @@ ________________________________________
 3.	Upload project files via FileZilla (FTP) to public_html/
 4.	Set up the database in cPanel and import schema
 5.	Update:
-php
-Always show details
-Copy
-$host = 'sqlXXX.free.nf';
-$dbname = 'your_dbname';
-$username = 'your_user';
-$password = 'your_pass';
+CREATE TABLE studentlogin (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  email VARCHAR(255) NOT NULL UNIQUE,
+  token VARCHAR(64),
+  token_expiry DATETIME
+);
+
 
 6.	Modify BASE_URL in includes/config.inc.php to match your domain
 ________________________________________
 📄 Project Report
-📄 Available at: View PDF Report
+📄 Available at: View PDF Report 📄 [View PDF Report](images/pdf/report.pdf)
+
 Includes full documentation: objectives, design, testing strategies.
 ________________________________________
 
