@@ -1,0 +1,51 @@
+body {
+    background: #202020;
+    margin: 0;
+    padding: 0;
+}
+
+#img1 {
+    height: 320vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    margin-top: -20px; 
+}
+
+.content {
+    position: absolute;
+    margin-top: 60px; 
+    margin-left: 80px; 
+}
+
+.PlcmntRcrd {
+    width: 916.8px;
+    height: 174px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.marquee-container {
+    display: flex;
+    position: absolute;
+    animation: marquee 30s linear infinite;
+}
+
+.cmpnylogo {
+    width: 100px;
+    height: auto;
+    margin: 0 10px;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+.img-fluid {
+    max-width: 80%;
+    height: auto;
+}
