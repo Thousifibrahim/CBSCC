@@ -79,8 +79,9 @@ Career Bridge automates the placement process, reducing manual effort and errors
 
 ### 🔧 Clone the Repository
 ```bash
-git clone https://github.com/yourusername/career-bridge.git
+md career-bridge
 cd career-bridge
+git clone [https://github.com/yourusername/career-bridge.git](https://github.com/Thousifibrahim/CBSCC.git)
 ```
 
 🖥 Install XAMPP
